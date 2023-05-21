@@ -19,8 +19,7 @@ class Tree {
         ch = x;
     }
  public:
-    Tree(std::vector<char> values)
-    {
+    Tree(std::vector<char> values) {
         Tree* root = new Tree('*');
        addChild(root, values);
     }
