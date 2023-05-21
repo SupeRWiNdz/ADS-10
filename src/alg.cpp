@@ -18,6 +18,8 @@ unsigned int factorial(unsigned int n)
 
 std::vector<char> getPerm(const Tree& tree, int n) {
     n -= 1;
+    if (n > tree.children.size())
+        return {};
     const Tree* ptr = &tree;
     std::vector<char> result;
     for (int i = 0; i < tree.children.size(); i++) {
