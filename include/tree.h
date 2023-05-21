@@ -15,11 +15,11 @@ class Tree {
             child->addChild(child, temp);
         }
     }
-    Tree(char x) {
+    explicit Tree(char x) {
         ch = x;
     }
  public:
-    Tree(std::vector<char> values) {
+    explicit Tree(std::vector<char> values) {
         Tree* root = new Tree('*');
        addChild(root, values);
     }
